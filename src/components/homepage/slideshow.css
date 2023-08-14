@@ -32,3 +32,10 @@
 .slideshow :hover {
   letter-spacing: 6px;
 }
+
+@media (max-width: 991px) {
+  .slideshow {
+    font-size: 2.2em;
+    background-position: center left;
+  }
+}
