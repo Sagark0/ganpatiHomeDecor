@@ -1,0 +1,34 @@
+.slideshow {
+  height: 100vh;
+  width: 100%;
+  background: url(../../assets/img1.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3.2em;
+  color: white;
+}
+
+.slideshow button {
+  border-radius: 0;
+  width: auto;
+  height: 3em;
+  background-color: #ff0157;
+  color: white;
+  margin-top: 20px;
+  padding: 0 10px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.slideshow :hover {
+  letter-spacing: 6px;
+}
