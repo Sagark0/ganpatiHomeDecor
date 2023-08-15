@@ -50,8 +50,12 @@
     width: 100%;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 370px) {
   .slideshow h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
+  }
+  .slideshow button {
+    padding: 0 5px;
+    font-size: 0.8rem;
   }
 }
