@@ -17,6 +17,13 @@ header .logo {
   font-weight: 600;
   font-size: 2em;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 80px;
+  /* transform: translateY(5px); */
+  margin-right: 10px;
 }
 header .logo span {
   color: #ff0158;
@@ -39,6 +46,7 @@ header .nav li a {
   font-weight: 300;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 header .nav li a:hover {
   color: #ff0157;
@@ -55,7 +63,7 @@ header .nav li a:hover {
   color: #111;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1150px) {
   header,
   header.sticky {
     padding: 10px 20px;
@@ -85,10 +93,18 @@ header .nav li a:hover {
   }
   header .nav li {
     margin: 20px 0px;
-
   }
   header .nav li a {
     color: #111;
     font-size: 1.6em;
+  }
+}
+
+@media (max-width: 520px) {
+  header .logo {
+    font-size: 1.6em;
+  }
+  header .logo img{
+    width: 70px;
   }
 }

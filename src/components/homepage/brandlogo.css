@@ -1,0 +1,33 @@
+.brandLogo {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 55%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+}
+.brandLogo img {
+    width: 60px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin: 0px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.brandLogo img:hover{
+    scale: 1.5;
+    width: 68px;
+    transform: translateX(-10);
+}
+@media (max-width: 1448px) {
+   .brandLogo{
+    width: 90%;
+   }
+  }
+  

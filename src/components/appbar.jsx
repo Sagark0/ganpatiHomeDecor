@@ -5,6 +5,8 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
+import logo from "../assets/logo1.png";
+
 export default function AppBar() {
   const [scrolling, setScrolling] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
@@ -30,6 +32,7 @@ export default function AppBar() {
   return (
     <header className={headerStickyActive}>
       <a className="logo">
+        <img src={logo} />
         Ganpati Home Decor <span>.</span>
       </a>
       <IconButton
@@ -37,7 +40,7 @@ export default function AppBar() {
         size="large"
         edge="start"
         aria-label="menu"
-        sx={{ color: "#fff" }}
+        sx={{ color: "#fff"}}
         onClick={handleMenuToggle}
       >
         {menuToggleActive ? <CloseIcon /> : <MenuIcon />}
@@ -47,7 +50,13 @@ export default function AppBar() {
           <a>Home</a>
         </li>
         <li>
-          <a>Our Work</a>
+          <a>Sanitary Ware</a>
+        </li>
+        <li>
+          <a>Construction</a>
+        </li>
+        <li>
+          <a>Ply & Decor</a>
         </li>
         <li>
           <a>Contact Us</a>

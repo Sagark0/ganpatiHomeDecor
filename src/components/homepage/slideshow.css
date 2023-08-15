@@ -8,10 +8,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 3.2em;
   color: white;
 }
-
+.slideshow h2{
+  font-size: 3em;
+  margin: 5px 0;
+}
+.slideshow p {
+  font-size: 1em;
+  font-weight: 300;
+  width: 50%;
+  text-align: center;
+}
 .slideshow button {
   border-radius: 0;
   width: auto;
@@ -29,13 +37,16 @@
   cursor: pointer;
 }
 
-.slideshow :hover {
+.slideshow button:hover {
   letter-spacing: 6px;
 }
 
 @media (max-width: 991px) {
-  .slideshow {
-    font-size: 2.2em;
+  .slideshow h2{
+    font-size: 2em;
     background-position: center left;
+  }
+  .slideshow p{
+    width: 100%;
   }
 }
