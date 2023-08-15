@@ -10,7 +10,7 @@
   flex-direction: column;
   color: white;
 }
-.slideshow h2{
+.slideshow h2 {
   font-size: 3em;
   margin: 5px 0;
 }
@@ -42,11 +42,16 @@
 }
 
 @media (max-width: 991px) {
-  .slideshow h2{
+  .slideshow h2 {
     font-size: 2em;
     background-position: center left;
   }
-  .slideshow p{
+  .slideshow p {
     width: 100%;
+  }
+}
+@media (max-width: 330px) {
+  .slideshow h2 {
+    font-size: 1.2em;
   }
 }

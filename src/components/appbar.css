@@ -102,9 +102,14 @@ header .nav li a:hover {
 
 @media (max-width: 520px) {
   header .logo {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
-  header .logo img{
-    width: 70px;
+  header .logo img {
+    width: 60px;
+  }
+}
+@media (max-width: 330px) {
+  header .logo {
+    font-size: 1em;
   }
 }
