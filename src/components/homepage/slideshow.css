@@ -42,6 +42,10 @@
 }
 
 @media (max-width: 991px) {
+  .slideshow {
+    background-size: cover;
+    background-position: center left;
+    }
   .slideshow h2 {
     font-size: 2em;
     background-position: center left;
@@ -51,6 +55,11 @@
   }
 }
 @media (max-width: 370px) {
+  .slideshow {
+    background: url(../../assets/img2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+  }
   .slideshow h2 {
     font-size: 1.3em;
   }
