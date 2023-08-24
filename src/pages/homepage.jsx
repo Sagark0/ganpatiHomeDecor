@@ -1,5 +1,6 @@
 import AppBar from "../components/appbar";
-import Banner from "../components/homepage/Banner";
+import Banner from "../components/homepage/banner";
+
 import Slideshow from "../components/homepage/slideshow";
 
 import sanitary from "../assets/sanitary1.jpg";
