@@ -1,9 +1,9 @@
 import Banner from "../components/homepage/banner";
 import Slideshow from "../components/homepage/slideshow";
 
-import sanitary from "../assets/sanitary1.jpg";
-import construction from "../assets/construction1.jpg";
-import homedecor from "../assets/homeDecor.jpg";
+import sanitary from "../assets/sanitary1_c.jpg";
+import construction from "../assets/construction1_c.jpg";
+import homedecor from "../assets/homeDecor_c.jpg";
 
 export default function Homepage() {
 
