@@ -10,6 +10,8 @@ import QuestionPaper from './pages/questionPaper'
 // material ui
 import { createTheme, ThemeProvider } from '@mui/material';
 import Homepage from "./pages/homepage";
+import AppBar from "./components/appbar";
+import Footer from "./components/footer";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,7 +30,11 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <AppBar />
+
         <RouterProvider router={router} />
+      <Footer />
+
     </ThemeProvider>
 
   )

@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: column;
   color: white;
+  padding-top: 20px;
 }
 .slideshow h2 {
   font-size: 3em;
