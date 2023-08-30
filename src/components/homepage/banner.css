@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
 }
-.sectionHomepage button {
+.sectionHomepage button, .button {
   border-radius: 0;
   width: auto;
   background-color: #ff0157;

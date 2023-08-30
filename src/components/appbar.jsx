@@ -1,6 +1,6 @@
 import "./appbar.css";
 import { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -47,16 +47,16 @@ export default function AppBar() {
       </IconButton>
       <ul className={`nav ${menuToggleActive}`}>
         <li>
-          <a>Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a>Sanitary Ware</a>
+          <a>Sanitary Ware & Tiles</a>
         </li>
         <li>
           <a>Construction</a>
         </li>
         <li>
-          <a>Ply & Decor</a>
+          <Link to="decor">Ply & Decor</Link>
         </li>
         <li>
           <a>Contact Us</a>

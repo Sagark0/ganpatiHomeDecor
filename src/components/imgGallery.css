@@ -1,0 +1,66 @@
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block
+}
+.grid-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.grid-wrapper > div > img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba( 0, 0, 0, 0.9);
+    position: fixed;
+    top: 0; 
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.full-img img{ 
+    width: 90%;
+    max-width: 500px;
+}
+.full-img .closeIcon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+/* .grid-wrapper .wide {
+    grid-column: span 2;
+}
+grid-wrapeer .tall {
+    grid-row: span 2;
+}
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+} */

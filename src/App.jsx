@@ -5,39 +5,35 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import QuestionPaper from './pages/questionPaper'
 
 // material ui
-import { createTheme, ThemeProvider } from '@mui/material';
+import { createTheme, ThemeProvider } from "@mui/material";
+
 import Homepage from "./pages/homepage";
-import AppBar from "./components/appbar";
 import Footer from "./components/footer";
+import { Decor } from "./pages/decor";
+import AppLayout from "./appLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
+    <Route path="/" element=<AppLayout />>
       <Route index element={<Homepage />} />
-      <Route path="questions" element={<QuestionPaper />} />
+      <Route path="decor" element={<Decor />} />
     </Route>
   )
-)
+);
 const theme = createTheme({
   typography: {
-    fontFamily: 'Poppins, sans-serif'
+    fontFamily: "Poppins, sans-serif",
   },
 });
 function App() {
-
   return (
     <ThemeProvider theme={theme}>
-      <AppBar />
-
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
       <Footer />
-
     </ThemeProvider>
-
-  )
+  );
 }
 
-export default App
+export default App;
