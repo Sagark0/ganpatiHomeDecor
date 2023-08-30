@@ -16,7 +16,7 @@ import AppLayout from "./appLayout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element=<AppLayout />>
+    <Route path="/" element={<AppLayout />}>
       <Route index element={<Homepage />} />
       <Route path="decor" element={<Decor />} />
     </Route>
