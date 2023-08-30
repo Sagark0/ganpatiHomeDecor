@@ -10,15 +10,16 @@ import {
 import { createTheme, ThemeProvider } from "@mui/material";
 
 import Homepage from "./pages/homepage";
-import Footer from "./components/footer";
 import { Decor } from "./pages/decor";
 import AppLayout from "./appLayout";
+import Contact from "./pages/contact";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<AppLayout />}>
       <Route index element={<Homepage />} />
       <Route path="decor" element={<Decor />} />
+      <Route path="contact" element={<Contact />} />
     </Route>
   )
 );
@@ -31,7 +32,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <RouterProvider router={router} />
-      <Footer />
     </ThemeProvider>
   );
 }

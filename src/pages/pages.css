@@ -1,9 +1,21 @@
 .page {
-  padding: 150px 100px;
+  /* padding: 150px 100px; */
   background: #111;
+  height: 120px;
 }
-@media (max-width: 800px) {
+.contactUs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1150px) {
   .page {
-    padding: 100px 10px;
+    height: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .contactUs {
+    flex-direction: column;
   }
 }

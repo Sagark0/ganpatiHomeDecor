@@ -1,0 +1,31 @@
+.map {
+  padding: 80px 100px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.contact_wrapper a {
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact_wrapper img{
+  width: 250px;
+  cursor: pointer;
+}
+.contact_wrapper ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.contact_wrapper li {
+  display: flex;
+  margin-bottom: 16px;
+}
+.contact_wrapper li p {
+  margin: 0 10px;
+}
+@media (max-width: 900px) {
+  .map {
+    padding: 80px 10px;
+  }
+}

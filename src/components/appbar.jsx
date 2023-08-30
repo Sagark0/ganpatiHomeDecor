@@ -47,7 +47,7 @@ export default function AppBar() {
       </IconButton>
       <ul className={`nav ${menuToggleActive}`}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={handleMenuToggle}>Home</Link>
         </li>
         <li>
           <a>Sanitary Ware & Tiles</a>
@@ -56,10 +56,10 @@ export default function AppBar() {
           <a>Construction</a>
         </li>
         <li>
-          <Link to="decor">Ply & Decor</Link>
+          <Link to="decor" onClick={handleMenuToggle}>Ply & Decor</Link>
         </li>
         <li>
-          <a>Contact Us</a>
+          <Link to="contact" onClick={handleMenuToggle}>Contact Us</Link>
         </li>
       </ul>
     </header>

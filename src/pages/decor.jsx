@@ -1,5 +1,5 @@
 import React from "react";
-import './pages.css';
+import "./pages.css";
 
 import a from "../assets/ImgGallery/img (1).jpg";
 import b from "../assets/ImgGallery/img (2).jpg";
@@ -26,8 +26,9 @@ export const Decor = () => {
   const images = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t];
 
   return (
-    <div className="page">
+    <>
+      <div className="page"></div>
       <Gallery images={images} />
-    </div>
+    </>
   );
 };
