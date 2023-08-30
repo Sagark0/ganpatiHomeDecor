@@ -54,6 +54,11 @@ img {
     color: #fff;
     cursor: pointer;
 }
+@media( max-width: 800px ) {
+    .grid-wrapper > div > img:hover {
+        transform: none;
+    }
+}
 /* .grid-wrapper .wide {
     grid-column: span 2;
 }
