@@ -1,4 +1,4 @@
-This is a repository contains packages modules and all boilerplate codes to create react app with vite, react-router, Axios, login page template, material UI integration etc.
+The link where this website is hosted: https://ganpati-home-decor.vercel.app/
 
 to start the client:
 1. run 'npm install' to install all modules.
