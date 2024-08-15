@@ -12,6 +12,11 @@ const Gallery = ({ images }) => {
         setImgSrc(img);
         setFullImage(true);
     }
+    const handleNext = () => {
+      setImgSrc( (prev) => {
+        console.log("next")
+      })
+    }
   return (
     <>
     <div className="full-img" style={imgStyle}>
@@ -22,6 +27,7 @@ const Gallery = ({ images }) => {
       {images.map((img) => (
         <div key={img}>
           <img src={img} onClick={() => handleImgClick(img)}/>
+          <button onClick={handleNext}>Next</button>
         </div>
       ))}
     </div>
